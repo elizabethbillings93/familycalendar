@@ -3,25 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="author" content="Elizabeth Billings, James Edwards, Joseph Pugmire, Michael Tingen"
+    <meta name="author" content="Elizabeth Billings, James Edwards, Joseph Pugmire, Michael Tingen">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="style.css"/>
-
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    
     <title>Family Calendar</title>
 </head>
 <body>
 
     <!-- Header -->
-    <div class="container">
+    <div class="container" id="projectname">
         <div class="row justify-content-center">
           <h1>Family Calendar</h1>
         </div>
       </div>
+    <div class="familyoption">
+        <button id="option1"></button>
+        <p>Johnson</p>
+        <button id="option2"></button>
+        <p>Smith</p>
+    </div>
 
     <!-- Calendar (Days of the Week)-->
+   <div class="dayname">
     <div class="container">
     <div class="row">
         <div class="col-sm">
@@ -34,22 +41,22 @@
             <p>Tue</p>
         </div>
         <div class="col-sm">
-            <p>Wen</p>
+            <p>Wed</p>
         </div>
         <div class="col-sm">
             <p>Thu</p>
         </div>
         <div class="col-sm">
-            <p>Friy</p>
+            <p>Fri</p>
         </div>
         <div class="col-sm">
             <p>Sat</p>
         </div>
     </div>
     </div>
-
+  </div>
     <!-- Calendar (Days of the Month) -->
-    <section class="container my-5 bg-light text-dark">
+    <section class="container my-5" id="table" >
 
         <!-- Row 1 -->
 
@@ -110,7 +117,7 @@
 
         <!-- Creates a row -->
         <!-- Creates a top border line -->
-        <div class="row border-top">
+        <div class="row border-top" >
             <!-- Creates a right & left border line -->
             <div class="col-sm border-right border-left">
                 <p>3</p>
@@ -181,7 +188,7 @@
 
           <!-- Creates a row -->
           <!-- Creates a top border line -->
-          <div class="row border-top">
+          <div class="row border-top" >
             <!-- Creates a right & left border line -->
             <div class="col-sm border-right border-left">
                 <p>10</p>
