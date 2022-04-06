@@ -1,87 +1,101 @@
-body{
-    font-family:Georgia, 'Times New Roman', Times, serif;
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: #f7f9fa;
 }
 
 #projectname {
     background-color: #fcfcf9;
-    color:#1C4670;
-    padding-bottom:20px;
+    color: #1C4670;
+    padding-bottom: 20px;
     padding-top: 20px;
     text-decoration: underline;
-    border:solid white;
+    border: solid white;
     border-radius: 5px;
-    margin-top:20px;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
-    
+
 }
-#projectname h1{
+
+#projectname h1 {
     font-size: 60px;
 }
-.dayname{
+
+.dayname {
     font-size: 20px;
     padding-left: 80px;
     text-decoration: underline;
-    color:#1C4670;
+    color: #1C4670;
     display: flex;
+    height: 20px;
 
 }
-.familyoption{
-    display:flex;
+
+.familyoption {
+    display: flex;
     justify-content: center;
     padding: 30px;
 }
-.familyoption p{
+
+.familyoption p {
     margin-left: 20px;
     width: 50px;
-    padding-top:10px;
+    padding-top: 10px;
 }
-#option1{
-    background-color:#1DC690;
+
+#option1 {
+    background-color: #1DC690;
     border: solid white;
     width: 50px;
-    height:50px;
+    height: 50px;
     border-radius: 10px;
 }
-#option2{
+
+#option2 {
     margin-left: 35%;
-    background-color:#278AB0;
+    background-color: #278AB0;
     border: solid white;
     border-radius: 10px;
     width: 50px;
-    height:50px;
+    height: 50px;
 }
-.neweventbtn{
-    margin-left:30px;
+
+.neweventbtn {
+    margin-left: 30px;
     margin-bottom: 30px;
     background-color: #1C4670;
-    color:white;
+    color: white;
     border: solid white;
     border-radius: 10px;
     height: 50px;
     width: 200px;
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
-.neweventbtn:hover{
+
+.neweventbtn:hover {
     background: #0d355d;
 }
-.neweventbtn:active{
+
+.neweventbtn:active {
     background: #05192d;
 }
+
 .eventbtn {
     display: flex;
     justify-content: center;
 }
-#table{
-    background-color:#fcfcf9;
-    color:#1C4670;
+
+#table {
+    background-color: #fcfcf9;
+    color: #1C4670;
     border: solid #1C4670;
     border-radius: 5px;
+    margin-top: 1rem !important;
 }
-.calendar-event{
+
+.calendar-event {
     border: 2px solid #1C4670;
     border-radius: 5px;
     margin: 10px 0px;
@@ -90,7 +104,7 @@ body{
 }
 
 .col-sm {
-    max-width: 14.5%;
+    max-width: 14.2%;
     min-height: 120px;
 }
 
@@ -101,93 +115,116 @@ body{
         display: none;
     }
 }
-.nextmonth{
-    margin-left:20px;
+
+.nextmonth {
+    margin-left: 20px;
     margin-bottom: 20px;
     background-color: #1d35eb;
-    color:white;
+    color: white;
     border: solid white;
     border-radius: 10px;
     height: 50px;
     width: 200px;
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 15px;
 }
+
 .lastmonth {
-    margin-left:20px;
+    margin-left: 20px;
     margin-bottom: 20px;
     background-color: #1d35eb;
-    color:white;
+    color: white;
     border: solid white;
     border-radius: 15px;
     height: 50px;
     width: 200px;
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
-    
+
 }
+
 .nextmonth:hover {
     background: #051591;
 }
+
 .nextmonth:active {
     background: #020a41;
 }
+
 .lastmonth:hover {
     background: #051591;
 }
+
 .lastmonth:active {
     background: #020a41;
 }
-.nextbtn{
+
+.nextbtn {
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
 }
 
 /* Media Query Assignments */
-@media all and (max-width:576px) {
+@media all and (max-width:800px) {
     .dayname {
         display: none;
     }
+
+    #table {
+        font-size: 9px;
+    }
 }
+
 @media all and (max-width:576px) {
     .col-sm {
         max-height: 70px;
         display: flex;
         align-content: stretch;
         justify-content: stretch;
-        justify-content:space-between
-     }
-     .col-xs-2 {
-         width: 200px;
-     }
+        justify-content: space-between;
+        overflow: hidden;
+    }
+
+    .col-xs-2 {
+        width: 200px;
+    }
 }
+
 @media all and (max-width: 450px) {
     #projectname h1 {
         font-size: 40px;
     }
 }
+
 @media all and (max-width: 580px) {
     #modal_container {
         width: 380px;
         height: 500px;
     }
 }
+
 @media all and (max-width: 580px) {
-    #modal_container > div {
+    #modal_container>div {
         width: 400px;
         height: 400px;
     }
 }
+
 @media all and (max-width: 580px) {
     #modal_container h1 {
         font-size: 25px;
     }
 }
+
 @media all and (max-width: 580px) {
     #modal_container input {
         width: 300px;
+    }
+
+    #table {
+        font-size: 9px;
     }
 }
