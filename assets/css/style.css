@@ -12,17 +12,20 @@ body{
     border:solid white;
     border-radius: 5px;
     margin-top:20px;
-    
+    display: flex;
+    justify-content: center;
 }
 #projectname h1{
     font-size: 60px;
+    
 }
 .dayname{
     font-size: 20px;
-    justify-content:space-evenly;
     padding-left: 80px;
     text-decoration: underline;
     color:#1C4670;
+    display: flex;
+
 }
 .familyoption{
     display:flex;
@@ -54,4 +57,13 @@ body{
     color:#1C4670;
     border: solid #1C4670;
     border-radius: 5px;
+}
+@media all and (max-width:576px) {
+    .dayname {
+        display: none;
+    }
+}
+@media all and (max-width:576px) {
+    .col-sm {max-height: 70px;
+     }
 }
