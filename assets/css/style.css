@@ -14,10 +14,10 @@ body{
     margin-top:20px;
     display: flex;
     justify-content: center;
+    
 }
 #projectname h1{
     font-size: 60px;
-    
 }
 .dayname{
     font-size: 20px;
@@ -65,6 +65,12 @@ body{
     align-items: center;
     justify-content: center;
 }
+.neweventbtn:hover{
+    background: #0d355d;
+}
+.neweventbtn:active{
+    background: #05192d;
+}
 .eventbtn {
     display: flex;
     justify-content: center;
@@ -81,21 +87,50 @@ body{
     margin: 10px 0px;
     padding: 5px 5px;
 }
-@media all and (max-width:576px) {
-    .dayname {
-        display: none;
-    }
+.nextmonth{
+    margin-left:20px;
+    margin-bottom: 20px;
+    background-color: #1d35eb;
+    color:white;
+    border: solid white;
+    border-radius: 10px;
+    height: 50px;
+    width: 200px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
 }
-@media all and (max-width:576px) {
-    .col-sm {
-        max-height: 70px;
-        display: flex;
-        align-content: stretch;
-        justify-content: stretch;
-        justify-content:space-between
-     }
+.lastmonth {
+    margin-left:20px;
+    margin-bottom: 20px;
+    background-color: #1d35eb;
+    color:white;
+    border: solid white;
+    border-radius: 15px;
+    height: 50px;
+    width: 200px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
 }
-
+.nextmonth:hover {
+    background: #051591;
+}
+.nextmonth:active {
+    background: #020a41;
+}
+.lastmonth:hover {
+    background: #051591;
+}
+.lastmonth:active {
+    background: #020a41;
+}
+.nextbtn{
+    display: flex;
+    justify-content:space-evenly;
+}
 /* Modal Container */
 
 #overlay {
@@ -153,7 +188,6 @@ body{
 #create {
     margin: 0 22.8em 0 0;
 }
-
 /* Event INFO Modal Parent Container */
 
 #overlay_2 {
@@ -223,3 +257,45 @@ body{
     margin: 0 24.4em 0 0;
 }
 
+/* Media Query Assignments */
+@media all and (max-width:576px) {
+    .dayname {
+        display: none;
+    }
+}
+@media all and (max-width:576px) {
+    .col-sm {
+        max-height: 70px;
+        display: flex;
+        align-content: stretch;
+        justify-content: stretch;
+        justify-content:space-between
+     }
+}
+@media all and (max-width: 450px) {
+    #projectname h1 {
+        font-size: 40px;
+    }
+}
+@media all and (max-width: 580px) {
+    #modal_container {
+        width: 380px;
+        height: 500px;
+    }
+}
+@media all and (max-width: 580px) {
+    #modal_container > div {
+        width: 400px;
+        height: 400px;
+    }
+}
+@media all and (max-width: 580px) {
+    #modal_container h1 {
+        font-size: 25px;
+    }
+}
+@media all and (max-width: 580px) {
+    #modal_container input {
+        width: 300px;
+    }
+}
