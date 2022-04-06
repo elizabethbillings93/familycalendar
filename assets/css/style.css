@@ -14,18 +14,21 @@ body{
     border:solid white;
     border-radius: 5px;
     margin-top:20px;
-    
+    display: flex;
+    justify-content: center;
 }
 #projectname h1{
     font-size: 60px;
+    
 }
 
 .dayname{
     font-size: 20px;
-    justify-content:space-evenly;
     padding-left: 80px;
     text-decoration: underline;
-    color:#1C4670; 
+    color:#1C4670;
+    display: flex;
+
 }
 .familyoption{
     display:flex;
@@ -51,6 +54,23 @@ body{
     border-radius: 10px;
     width: 50px;
     height:50px;
+}
+.neweventbtn{
+    margin-left:30px;
+    margin-bottom: 30px;
+    background-color: #1C4670;
+    color:white;
+    border: solid white;
+    border-radius: 10px;
+    height: 50px;
+    width: 200px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.eventbtn {
+    display: flex;
+    justify-content: center;
 }
 #table{
     background-color:#fcfcf9;
@@ -117,3 +137,23 @@ body{
         margin: 0 22.8em 0 0;
     }
 
+.calendar-event{
+    border: 2px solid #1C4670;
+    border-radius: 5px;
+    margin: 10px 0px;
+    padding: 5px 5px;
+}
+@media all and (max-width:576px) {
+    .dayname {
+        display: none;
+    }
+}
+@media all and (max-width:576px) {
+    .col-sm {
+        max-height: 70px;
+        display: flex;
+        align-content: stretch;
+        justify-content: stretch;
+        justify-content:space-between
+     }
+}
