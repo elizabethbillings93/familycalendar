@@ -131,26 +131,6 @@ body{
     display: flex;
     justify-content:space-evenly;
 }
-@media all and (max-width:576px) {
-    .dayname {
-        display: none;
-    }
-}
-@media all and (max-width:576px) {
-    .col-sm {
-        max-height: 70px;
-        display: flex;
-        align-content: stretch;
-        justify-content: stretch;
-        justify-content:space-between
-     }
-}
-@media all and (max-width: 450px) {
-    #projectname h1 {
-        font-size: 40px;
-    }
-}
-
 /* Modal Container */
 
 #overlay {
@@ -207,4 +187,46 @@ body{
 
 #create {
     margin: 0 22.8em 0 0;
+}
+/* Media Query Assignments */
+@media all and (max-width:576px) {
+    .dayname {
+        display: none;
+    }
+}
+@media all and (max-width:576px) {
+    .col-sm {
+        max-height: 70px;
+        display: flex;
+        align-content: stretch;
+        justify-content: stretch;
+        justify-content:space-between
+     }
+}
+@media all and (max-width: 450px) {
+    #projectname h1 {
+        font-size: 40px;
+    }
+}
+@media all and (max-width: 580px) {
+    #modal_container {
+        width: 380px;
+        height: 500px;
+    }
+}
+@media all and (max-width: 580px) {
+    #modal_container > div {
+        width: 400px;
+        height: 400px;
+    }
+}
+@media all and (max-width: 580px) {
+    #modal_container h1 {
+        font-size: 25px;
+    }
+}
+@media all and (max-width: 580px) {
+    #modal_container input {
+        width: 300px;
+    }
 }
