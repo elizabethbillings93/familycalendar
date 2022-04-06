@@ -14,7 +14,7 @@ body{
     margin-top:20px;
     display: flex;
     justify-content: center;
-    
+
 }
 #projectname h1{
     font-size: 60px;
@@ -29,28 +29,44 @@ body{
 }
 .familyoption{
     display:flex;
-    justify-content: center;
-    padding: 30px;
+    justify-content:center;
+    justify-content: space-evenly;
+    padding-top: 20px;
 }
-.familyoption p{
-    margin-left: 20px;
-    width: 50px;
-    padding-top:10px;
+#name1{
+    padding-left: 10px;
+    position:relative;
+    bottom: 20px;
+    color:#1C4670; 
 }
+#name2{
+    padding-left: 10px;
+    position:relative;
+    bottom: 20px;
+    position:relative;
+    bottom: 20px;
+    color:#1C4670
+}
+
 #option1{
     background-color:#1DC690;
     border: solid white;
     width: 50px;
     height:50px;
     border-radius: 10px;
+    padding-top: 200px;
+   
+    
 }
+
 #option2{
-    margin-left: 35%;
     background-color:#278AB0;
     border: solid white;
     border-radius: 10px;
     width: 50px;
     height:50px;
+    
+    
 }
 .neweventbtn{
     margin-left:30px;
