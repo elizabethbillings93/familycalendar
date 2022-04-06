@@ -28,7 +28,7 @@
     </div>
     <!-- added button -->
     <div class="eventbtn">
-      <button class="neweventbtn">Add New Event</button>
+      <button class="neweventbtn" onclick="renderModal()">Add New Event</button>
     </div>
 
     <!-- Calendar (Days of the Week)-->
@@ -301,10 +301,14 @@
           <a href="./assets/months/lastmonth.html"><button class="lastmonth">Last Month</button></a>
           <a href="./assets/months/nextmonth.html"><button class="nextmonth">Next Month</button></a>
         </div>
+      </section>
+      <div id="addEventModalContainer"></div>
+      
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/modals.js"></script>
     <script src="assets/js/addevent.js"></script>
 </body>
 </html>
