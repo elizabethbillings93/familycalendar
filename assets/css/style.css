@@ -55,3 +55,10 @@ body{
     border: solid #1C4670;
     border-radius: 5px;
 }
+
+.calendar-event{
+    border: 2px solid #1C4670;
+    border-radius: 5px;
+    margin: 10px 0px;
+    padding: 5px 5px;
+}
