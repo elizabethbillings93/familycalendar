@@ -64,6 +64,11 @@ body{
     }
 }
 @media all and (max-width:576px) {
-    .col-sm {max-height: 70px;
+    .col-sm {
+        max-height: 70px;
+        display: flex;
+        align-content: stretch;
+        justify-content: stretch;
+        justify-content:space-between
      }
-}
+    }
