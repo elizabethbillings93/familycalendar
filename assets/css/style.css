@@ -49,6 +49,16 @@ body{
     width: 50px;
     height:50px;
 }
+.neweventbtn{
+    margin-left:830px;
+    margin-bottom: 30px;
+    background-color: #1C4670;
+    color:white;
+    border: solid white;
+    border-radius: 10px;
+    height: 50px;
+    width: 200px;
+}
 #table{
     background-color:#fcfcf9;
     color:#1C4670;
