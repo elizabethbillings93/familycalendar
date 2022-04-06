@@ -65,6 +65,12 @@ body{
     align-items: center;
     justify-content: center;
 }
+.neweventbtn:hover{
+    background: #0d355d;
+}
+.neweventbtn:active{
+    background: #05192d;
+}
 .eventbtn {
     display: flex;
     justify-content: center;
@@ -80,6 +86,50 @@ body{
     border-radius: 5px;
     margin: 10px 0px;
     padding: 5px 5px;
+}
+.nextmonth{
+    margin-left:20px;
+    margin-bottom: 20px;
+    background-color: #1d35eb;
+    color:white;
+    border: solid white;
+    border-radius: 10px;
+    height: 50px;
+    width: 200px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+.lastmonth {
+    margin-left:20px;
+    margin-bottom: 20px;
+    background-color: #1d35eb;
+    color:white;
+    border: solid white;
+    border-radius: 15px;
+    height: 50px;
+    width: 200px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.nextmonth:hover {
+    background: #051591;
+}
+.nextmonth:active {
+    background: #020a41;
+}
+.lastmonth:hover {
+    background: #051591;
+}
+.lastmonth:active {
+    background: #020a41;
+}
+.nextbtn{
+    display: flex;
+    justify-content:space-evenly;
 }
 @media all and (max-width:576px) {
     .dayname {
