@@ -1,0 +1,126 @@
+/* Modal Container */
+
+#overlay {
+    /* "none" is removed from display when Cancel is clicked */
+    /* display: none; */
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 1;
+}
+
+#modal_container {
+    font-family: 'Josefin Sans', 'Franklin Gothic Medium' , sans-serif;
+    border: 1px solid #fcfcf9;
+    border-radius: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ebebde;
+    transition: all 0.5s;
+}
+
+#modal_container > div {
+    padding: 2em;
+}
+
+#modal_container h1 {
+    padding-bottom: 1em;
+}
+
+#modal_container input {
+    margin: 0 0 10px 0;
+    width: 500px;
+}
+
+/* Modal Buttons */
+
+#modal_container button {
+    border: 1px solid #000;
+    border-radius: .5em;
+    background-color: #fff;;
+    color: #000;
+
+}    
+
+#modal_container button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+#create {
+    margin: 0 22.8em 0 0;
+}
+
+/* Event INFO Modal Parent Container */
+
+#overlay_2 {
+    /* "none" is removed from display when Cancel is clicked */
+    /* display: none; */
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 1;
+}
+
+#event_modal_container {
+    font-family: 'Josefin Sans', 'Franklin Gothic Medium' , sans-serif;
+    border: 1px solid #fcfcf9;
+    border-radius: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ebebde;
+    transition: all 0.5s;
+}
+
+#event_modal_container > div {
+    padding: 2em;
+}
+
+#event_modal_container h1 {
+    padding-bottom: 1em;
+}
+
+
+/* Events INFO Modal API Containers */
+#maps_container {
+    border: 2px solid #000;
+    height: 100px;
+    margin: 0 0 10px 0;
+    width: 500px;
+}
+
+#weather_container {
+    border: 2px solid #000;
+    height: 100px;
+    margin: 0 0 10px 0;
+    width: 500px;
+}
+
+/* Event Modal INFO Buttons */
+
+#event_modal_container button {
+    border: 1px solid #000;
+    border-radius: .5em;
+    background-color: #fff;;
+    color: #000;
+
+}    
+
+#event_modal_container button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+#edit {
+    margin: 0 24.4em 0 0;
+}
