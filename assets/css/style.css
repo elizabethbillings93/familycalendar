@@ -14,11 +14,10 @@ body{
     margin-top:20px;
     display: flex;
     justify-content: center;
-    margin-bottom: 10px;
+
 }
 #projectname h1{
     font-size: 60px;
-    
 }
 .dayname{
     font-size: 20px;
@@ -82,6 +81,12 @@ body{
     align-items: center;
     justify-content: center;
 }
+.neweventbtn:hover{
+    background: #0d355d;
+}
+.neweventbtn:active{
+    background: #05192d;
+}
 .eventbtn {
     display: flex;
     justify-content: center;
@@ -97,7 +102,67 @@ body{
     border-radius: 5px;
     margin: 10px 0px;
     padding: 5px 5px;
+    overflow-wrap: break-word;
 }
+
+.col-sm {
+    max-width: 165px;
+    min-height: 120px;
+}
+
+/* MEDIA QUERIES */
+
+@media all and (max-width:576px) {
+    .dayname {
+        display: none;
+    }
+}
+.nextmonth{
+    margin-left:20px;
+    margin-bottom: 20px;
+    background-color: #1d35eb;
+    color:white;
+    border: solid white;
+    border-radius: 10px;
+    height: 50px;
+    width: 200px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+.lastmonth {
+    margin-left:20px;
+    margin-bottom: 20px;
+    background-color: #1d35eb;
+    color:white;
+    border: solid white;
+    border-radius: 15px;
+    height: 50px;
+    width: 200px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.nextmonth:hover {
+    background: #051591;
+}
+.nextmonth:active {
+    background: #020a41;
+}
+.lastmonth:hover {
+    background: #051591;
+}
+.lastmonth:active {
+    background: #020a41;
+}
+.nextbtn{
+    display: flex;
+    justify-content:space-evenly;
+}
+
+/* Media Query Assignments */
 @media all and (max-width:576px) {
     .dayname {
         display: none;
@@ -111,4 +176,34 @@ body{
         justify-content: stretch;
         justify-content:space-between
      }
+     .col-xs-2 {
+         width: 200px;
+     }
+}
+@media all and (max-width: 450px) {
+    #projectname h1 {
+        font-size: 40px;
+    }
+}
+@media all and (max-width: 580px) {
+    #modal_container {
+        width: 380px;
+        height: 500px;
+    }
+}
+@media all and (max-width: 580px) {
+    #modal_container > div {
+        width: 400px;
+        height: 400px;
+    }
+}
+@media all and (max-width: 580px) {
+    #modal_container h1 {
+        font-size: 25px;
+    }
+}
+@media all and (max-width: 580px) {
+    #modal_container input {
+        width: 300px;
+    }
 }

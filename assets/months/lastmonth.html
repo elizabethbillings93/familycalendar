@@ -8,8 +8,7 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="assets/css/style.css"/>
-    <link rel="stylesheet" href="assets/css/modals.css"/>
+    <link rel="stylesheet" href="../css/style.css"/>
     
     <title>Family Calendar</title>
 </head>
@@ -22,18 +21,14 @@
         </div>
       </div>
     <div class="familyoption">
-      <div>
-        <input type="checkbox" id="option1" name="families"></input>
-        <label for="option1" id="name1">Johnson</p>
-       </div>  
-       <div> 
-        <input type="checkbox" id="option2" name="families"></input>
-        <label for="option2" id="name2">Smith</p>
-      </div>
-        </div>
+        <button id="option1"></button>
+        <p>Johnson</p>
+        <button id="option2"></button>
+        <p>Smith</p>
+    </div>
     <!-- added button -->
     <div class="eventbtn">
-      <button class="neweventbtn" onclick="renderAddEventModal()">Add New Event</button>
+      <button class="neweventbtn">Add New Event</button>
     </div>
 
     <!-- Calendar (Days of the Week)-->
@@ -83,24 +78,24 @@
             </div>
           </div>
           <div class="col-sm border-right">
-            <p></p>
+            <p>1</p>
             <div class="col-xs-2" id="day-3-event-pane">
             </div>
           </div>
           <div class="col-sm border-right">
-            <p></p>
+            <p>2</p>
             <div class="col-xs-2" id="day-4-event-pane">
             </div>
             <br>
           </div>
           <div class="col-sm border-right">
-            <p></p>
+            <p>3</p>
             <div class="col-xs-2" id="day-5-event-pane">
             </div>
             <br>
           </div>
           <div class="col-sm border-right">
-            <p>1</p>
+            <p>4</p>
             <div class="col-xs-2" id="day-6-event-pane">
                 <!--Calendar event test-->
                 <div class="calendar-event">best length is probably 2 lines</div>
@@ -108,7 +103,7 @@
             <br>
           </div>
           <div class="col-sm border-right">
-            <p>2</p>
+            <p>5</p>
             <!-- Input Form -->
             <div class="col-xs-2" id="day-7-event-pane">
             </div>
@@ -123,49 +118,49 @@
         <div class="row border-top" >
             <!-- Creates a right & left border line -->
             <div class="col-sm border-right border-left">
-                <p>3</p>
+                <p>6</p>
                 <!-- Input Form -->
                 <div class="col-xs-2" id="day-8-event-pane">
                 </div>
               <br>
             </div>
             <div class="col-sm border-right">
-                <p>4</p>
+                <p>7</p>
                 <!-- Input Form -->
                 <div class="col-xs-2" id="day-9-event-pane">
                 </div>
               <br>
             </div>
             <div class="col-sm border-right">
-                <p>5</p>
+                <p>8</p>
                 <!-- Input Form -->
                 <div class="col-xs-2" id="day-10-event-pane">
                 </div>
               <br>
             </div>
             <div class="col-sm border-right">
-                <p>6</p>
+                <p>9</p>
                 <!-- Input Form -->
                 <div class="col-xs-2" id="day-11-event-pane">
                 </div>
               <br>
             </div>
             <div class="col-sm border-right">
-                <p>7</p>
+                <p>10</p>
                 <!-- Input Form -->
                 <div class="col-xs-2" id="day-12-event-pane">
                 </div>
               <br>
             </div>
             <div class="col-sm border-right">
-                <p>8</p>
+                <p>11</p>
                 <!-- Input Form -->
                 <div class="col-xs-2" id="day-13-event-pane">
                 </div>
               <br>
             </div>
             <div class="col-sm border-right">
-                <p>9</p>
+                <p>12</p>
                 <!-- Input Form -->
                 <div class="col-xs-2" id="day-14-event-pane">
                 </div>
@@ -180,37 +175,37 @@
           <div class="row border-top" >
             <!-- Creates a right & left border line -->
             <div class="col-sm border-right border-left">
-                <p>10</p>
-                <div class="col-xs-2 text-wrap" id="day-15-event-pane">
-            </div>
-            </div>
-            <div class="col-sm border-right">
-                <p>11</p>
-                <div class="col-xs-2" id="day-16-event-pane">
-            </div>
-            </div>
-            <div class="col-sm border-right">
-                <p>12</p>
-                <div class="col-xs-2" id="day-17-event-pane">
-            </div>
-            </div>
-            <div class="col-sm border-right">
                 <p>13</p>
-                <div class="col-xs-2" id="day-18-event-pane">
+                <div class="col-xs-2" id="day-15-event-pane">
             </div>
             </div>
             <div class="col-sm border-right">
                 <p>14</p>
-                <div class="col-xs-2" id="day-19-event-pane">
+                <div class="col-xs-2" id="day-16-event-pane">
             </div>
             </div>
             <div class="col-sm border-right">
                 <p>15</p>
-                <div class="col-xs-2" id="day-20-event-pane">
+                <div class="col-xs-2" id="day-17-event-pane">
             </div>
             </div>
             <div class="col-sm border-right">
                 <p>16</p>
+                <div class="col-xs-2" id="day-18-event-pane">
+            </div>
+            </div>
+            <div class="col-sm border-right">
+                <p>17</p>
+                <div class="col-xs-2" id="day-19-event-pane">
+            </div>
+            </div>
+            <div class="col-sm border-right">
+                <p>18</p>
+                <div class="col-xs-2" id="day-20-event-pane">
+            </div>
+            </div>
+            <div class="col-sm border-right">
+                <p>19</p>
                 <div class="col-xs-2" id="day-21-event-pane">
             </div>
             </div>
@@ -223,37 +218,37 @@
           <div class="row border-top">
             <!-- Creates a right & left border line -->
             <div class="col-sm border-right border-left">
-                <p>17</p>
-                <div class="col-xs-2" id="day-22-event-pane">
-                </div>
-            </div>
-            <div class="col-sm border-right">
-                <p>18</p>
-                <div class="col-xs-2" id="day-23-event-pane">
-                </div>
-            </div>
-            <div class="col-sm border-right">
-                <p>19</p>
-                <div class="col-xs-2" id="day-24-event-pane">
-            </div>
-            </div>
-            <div class="col-sm border-right">
                 <p>20</p>
-                <div class="col-xs-2" id="day-25-event-pane">
+                <div class="col-xs-2" id="day-22-event-pane">
             </div>
             </div>
             <div class="col-sm border-right">
                 <p>21</p>
-                <div class="col-xs-2" id="day-26-event-pane">
+                <div class="col-xs-2" id="day-23-event-pane">
             </div>
             </div>
             <div class="col-sm border-right">
                 <p>22</p>
-                <div class="col-xs-2" id="day-27-event-pane">
+                <div class="col-xs-2" id="day-24-event-pane">
             </div>
             </div>
             <div class="col-sm border-right">
                 <p>23</p>
+                <div class="col-xs-2" id="day-25-event-pane">
+            </div>
+            </div>
+            <div class="col-sm border-right">
+                <p>24</p>
+                <div class="col-xs-2" id="day-26-event-pane">
+            </div>
+            </div>
+            <div class="col-sm border-right">
+                <p>25</p>
+                <div class="col-xs-2" id="day-27-event-pane">
+            </div>
+            </div>
+            <div class="col-sm border-right">
+                <p>26</p>
                 <div class="col-xs-2" id="day-28-event-pane">
             </div>
             </div>
@@ -266,54 +261,47 @@
           <div class="row border-top border-bottom">
             <!-- Creates a right & left border line -->
             <div class="col-sm border-right border-left">
-                <p>24</p>
+                <p>27</p>
                 <div class="col-xs-2" id="day-29-event-pane">
             </div>
             </div>
             <div class="col-sm border-right">
-                <p>25</p>
+                <p>28</p>
                 <div class="col-xs-2" id="day-30-event-pane">
             </div>
             </div>
             <div class="col-sm border-right">
-                <p>26</p>
+                <p>29</p>
                 <div class="col-xs-2" id="day-31-event-pane">
             </div>
             </div>
             <div class="col-sm border-right">
-                <p>27</p>
+                <p>30</p>
                 <div class="col-xs-2" id="day-32-event-pane">
             </div>
             </div>
             <div class="col-sm border-right">
-                <p>28</p>
+                <p>31</p>
                 <div class="col-xs-2" id="day-33-event-pane">
             </div>
             </div>
             <div class="col-sm border-right">
-                <p>29</p>
+                <p></p>
                 <div class="col-xs-2" id="day-34-event-pane">
             </div>
             </div>
             <div class="col-sm border-right">
-                <p>30</p>
+                <p></p>
                 <div class="col-xs-2" id="day-35-event-pane">
             </div>
             </div>
           </div>
-        </section>
-        <div class="nextbtn">
-          <a href="./assets/months/lastmonth.html"><button class="lastmonth">Last Month</button></a>
-          <a href="./assets/months/nextmonth.html"><button class="nextmonth">Next Month</button></a>
-        </div>
       </section>
-      <div id="addEventModalContainer"></div>
-      <div id="eventInfoModalContainer"></div>
       
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="assets/js/modals.js"></script>
-    <script src="assets/js/addevent.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/addevent.js"></script>
 </body>
 </html>
