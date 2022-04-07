@@ -33,22 +33,20 @@ body {
 .familyoption{
     display:flex;
     justify-content:center;
-    justify-content: space-evenly;
     padding-top: 20px;
 }
 #name1{
-    padding-left: 10px;
+    padding-left: 20px;
     position:relative;
-    bottom: 20px;
+    padding-top: 10px;
     color:#1C4670; 
 }
 #name2{
-    padding-left: 10px;
+    padding-left: 20px;
     position:relative;
     bottom: 20px;
-    position:relative;
-    bottom: 20px;
-    color:#1C4670
+    color:#1C4670;
+    padding-top: 30px;
 }
 
 #option1{
@@ -57,7 +55,7 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 10px;
-    padding-top: 200px;
+    
    
     
 }
@@ -117,6 +115,14 @@ body {
 .col-sm {
     max-width: 14.2%;
     min-height: 120px;
+}
+
+.monthname{
+    display:flex;
+    justify-content: center;
+    color:#1C4670;
+    padding-bottom: 20px;
+    text-decoration: underline;
 }
 
 /* MEDIA QUERIES */
@@ -197,6 +203,7 @@ body {
         justify-content: stretch;
         justify-content: space-between;
         overflow: hidden;
+        padding-left: 5px;
     }
 
     .col-xs-2 {
@@ -214,6 +221,7 @@ body {
     #modal_container {
         width: 380px;
         height: 500px;
+    
     }
 }
 
@@ -221,6 +229,7 @@ body {
     #modal_container>div {
         width: 400px;
         height: 400px;
+    
     }
 }
 
