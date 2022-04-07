@@ -9,7 +9,9 @@ function renderAddEventModal() {
 
                     <p>Which Family?</p>
                     <button id="event_name1" class="modal-input1" >Johnson  </button>
-                    <button id="event_name2" class="modal-input2" > Smith </button> 
+                    <button id="event_name2" class="modal-input2" > Smith </button>
+                    <div>Title:</div>
+                    <input id="event_title" class="modal-input" type="text" placeholder="Title">
                     <br>
                     <p>Date:</p>
                     <input id="event_date" class="modal-input" type="text" placeholder="Date">
@@ -21,7 +23,7 @@ function renderAddEventModal() {
                     <input id="event_location" class="modal-input" type="text" placeholder="Location">
                         <br>
 
-                    <button id="create" class="">Create</button>
+                    <button id="create" onclick="saveSessionEvent();removeAddEventModal()">Create</button>
                     <button id="cancel" onclick="removeAddEventModal()">Cancel</button>
                 </div>
             </container>
@@ -38,6 +40,7 @@ function removeAddEventModal() {
 
 function renderEventInfoModal() {
     var element = document.getElementById('eventInfoModalContainer');
+    var target = this.id.match(/^\d+|\d+\b|\d+(?=\w)/g);
     element.innerHTML = `
         <section id="overlay_2">
             <container id="event_modal_container" class="open-info-modal">
@@ -57,11 +60,15 @@ function renderEventInfoModal() {
 
                 <button id="edit">Edit</button>
                 <button id="cancel-2" onclick="removeEventInfoModal()">Cancel</button>
+                <button id="delete-event" onclick="removeEventButton()">Delete</button>
 
             </div>
             </container>
         </section>
     `;
+    element.eventTarget = target;
+    //identify which event this is
+
 }
 
 function removeEventInfoModal() {
