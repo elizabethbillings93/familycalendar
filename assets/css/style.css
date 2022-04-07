@@ -195,6 +195,7 @@ body {
         justify-content: stretch;
         justify-content: space-between;
         overflow: hidden;
+        padding-left: 5px;
     }
 
     .col-xs-2 {
