@@ -33,22 +33,20 @@ body {
 .familyoption{
     display:flex;
     justify-content:center;
-    justify-content: space-evenly;
     padding-top: 20px;
 }
 #name1{
-    padding-left: 10px;
+    padding-left: 20px;
     position:relative;
-    bottom: 20px;
+    padding-top: 10px;
     color:#1C4670; 
 }
 #name2{
-    padding-left: 10px;
+    padding-left: 20px;
     position:relative;
     bottom: 20px;
-    position:relative;
-    bottom: 20px;
-    color:#1C4670
+    color:#1C4670;
+    padding-top: 30px;
 }
 
 #option1{
@@ -57,7 +55,7 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 10px;
-    padding-top: 200px;
+    
    
     
 }

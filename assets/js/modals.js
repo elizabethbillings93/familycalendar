@@ -7,8 +7,9 @@ function renderAddEventModal() {
                     <h1>How's your day going to go?</h1>
 
                     <p>Your name:</p>
-                    <input id="event_name" class="modal-input" type="text" placeholder="Your name">
-                        <br>
+                    <button id="event_name" class="modal-input" > Johnson </button>
+                    <button id="event_name" class="modal-input" > Smith </button> 
+                    <br>
                     <p>Date:</p>
                     <input id="event_date" class="modal-input" type="text" placeholder="Date">
                         <br>
