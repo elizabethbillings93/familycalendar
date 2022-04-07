@@ -212,6 +212,7 @@ body {
     #modal_container {
         width: 380px;
         height: 500px;
+    
     }
 }
 
@@ -219,6 +220,7 @@ body {
     #modal_container>div {
         width: 400px;
         height: 400px;
+    
     }
 }
 
