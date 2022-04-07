@@ -311,24 +311,22 @@
     <section id="overlay">
       <container id="modal_container" class="open-modal">
           <div>
-              <h1>New Event</h1>
+              <h1 id="add-event-title">New Event</h1>
 
-              <p>Which Family?</p>
+              <div>Which Family?</div>
               <button id="event_name1" class="modal-input1" >Johnson  </button>
               <button id="event_name2" class="modal-input2" > Smith </button>
               <div>Title:</div>
               <input id="event_title" class="modal-input" type="text" placeholder="Title">
               <br>
-              <p>Date:</p>
-              <input id="event_date" class="modal-input" type="text" placeholder="Date">
+              <div>Date:</div>
+              <select id="event_date" class="modal-input">
+                <option value="" disabled selected>Select Date</option>
+              </select>
                   <br>
-              <p>Category:</p>
-              <input id="event_category" class="modal-input" type="text" placeholder="Category">
-                  <br>
-              <p>Location:</p>
+              <div>Location:</div>
               <input id="event_location" class="modal-input" type="text" placeholder="Location">
-                  <br>
-
+              </br>
               <button id="create" onclick="saveSessionEvent(); removeAddEventModal()">Create</button>
               <button id="cancel" onclick="removeAddEventModal()">Cancel</button>
           </div>
@@ -340,7 +338,7 @@
       <container id="event_modal_container" class="open-info-modal">
       <div>
 
-          <h1>Event: Birthday Party</h1>
+          <h1 id="event-info-title">Event: Birthday Party</h1>
 
           <div id="maps_container" class="modal-pane">
           <!-- Will Contain Appended Content -->

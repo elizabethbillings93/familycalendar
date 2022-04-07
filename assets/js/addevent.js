@@ -11,7 +11,7 @@ function addEvent(targetDate, text, eventId){
     newEvent.textContent = text;
     //make element clickable, open info modal
     newEvent.addEventListener("click", renderEventInfoModal);
-    newEvent.setAttribute('eventId', eventId);
+    newEvent.dataset.eventId = eventId;
     
     
     element.appendChild(newEvent);
@@ -53,13 +53,11 @@ function removeEventRenderOnly(targetDate, eventNumber) {
 function saveSessionEvent() {
     var formTitle = document.getElementById('event_title').value;
     var formDate = parseInt(document.getElementById('event_date').value);
-    var formCategory = document.getElementById('event_category').value;
     var formLocation = document.getElementById('event_location').value;
     var eventId = Math.trunc(Math.random()*1000000);
     var event = {
         title: formTitle,
         date: formDate,
-        category: formCategory,
         location: formLocation,
         id: eventId
     };

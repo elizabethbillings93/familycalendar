@@ -69,7 +69,6 @@
 }
 
 #create {
-    margin: 0 22.8em 0 0;
     background-color: #1C4670;
     color:white;
     height: 30px;
@@ -77,6 +76,7 @@
 }
 #cancel{
     background-color: white;
+    float: right;
 }
 /* Event INFO Modal Parent Container */
 
@@ -143,9 +143,20 @@
     color: #fff;
 }
 
-#edit {
-    margin: 0 24.4em 0 0;
+#cancel-2 {
+    float: right;
 }
+
+#delete-event {
+    float: right;
+    margin-right: 5px;
+}
+
+#add-event-title {
+    margin-bottom: 0px;
+    padding-bottom: 2rem!important;
+}
+
 @media all and (max-width: 581px) {
     #modal_container input {
         width: 300px;
