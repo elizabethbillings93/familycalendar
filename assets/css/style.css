@@ -117,6 +117,14 @@ body {
     min-height: 120px;
 }
 
+.monthname{
+    display:flex;
+    justify-content: center;
+    color:#1C4670;
+    padding-bottom: 20px;
+    text-decoration: underline;
+}
+
 /* MEDIA QUERIES */
 
 @media all and (max-width:576px) {
