@@ -5,7 +5,9 @@ function renderAddEventModal() {
     if(typeof element !== 'undefined' && element !== null)
         element.style.display = 'block';
 }
-
+// ----------------------------------> REMOVE THIS ONCE IT WORKS JAMES <----------------------------------
+renderAddEventModal()
+// ----------------------------------> REMOVE THIS ONCE IT WORKS JAMES <----------------------------------
 function removeAddEventModal() {
     var element = document.getElementById('addEventModalContainer');
     //nullcheck
@@ -21,6 +23,9 @@ function renderEventInfoModal() {
         element.style.display = 'block'
     }
 }
+// ----------------------------------> REMOVE THIS ONCE IT WORKS JAMES <----------------------------------
+renderEventInfoModal()
+// ----------------------------------> REMOVE THIS ONCE IT WORKS JAMES <---------------------------------
 
 function removeEventInfoModal() {
     var element = document.getElementById('eventInfoModalContainer');
