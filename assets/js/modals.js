@@ -1,14 +1,15 @@
+
 function renderAddEventModal() {
     var element = document.getElementById('addEventModalContainer');
     element.innerHTML = `
         <section id="overlay">
             <container id="modal_container" class="open-modal">
                 <div>
-                    <h1>How's your day going to go?</h1>
+                    <h1>New Event</h1>
 
-                    <p>Your name:</p>
-                    <button id="event_name" class="modal-input" > Johnson </button>
-                    <button id="event_name" class="modal-input" > Smith </button> 
+                    <p>Which Family?</p>
+                    <button id="event_name1" class="modal-input1" >Johnson  </button>
+                    <button id="event_name2" class="modal-input2" > Smith </button> 
                     <br>
                     <p>Date:</p>
                     <input id="event_date" class="modal-input" type="text" placeholder="Date">
