@@ -26,7 +26,9 @@ function renderAddEventModal() {
         </section>
     `;
 }
-
+// ----------------------------------> REMOVE THIS ONCE IT WORKS JAMES <----------------------------------
+renderAddEventModal()
+// ----------------------------------> REMOVE THIS ONCE IT WORKS JAMES <----------------------------------
 function removeAddEventModal() {
     var element = document.getElementById('overlay');
     //nullcheck
@@ -44,13 +46,18 @@ function renderEventInfoModal() {
                 <h1>Event: Birthday Party</h1>
 
                 <div id="maps_container" class="modal-pane">
-                <!-- Will Contain Appended Content -->
-                This div will contain appended [MAP] API data from JS
+                <!-- Will Contain Appended Content into map id -->
+                    <div id="map"></div>
                 </div>
 
                 <div id="weather_container" class="modal-pane">
-                <!-- Will Contain Appended Content -->
-                This div will contain appended [WEATHER] API data from JS
+                <h2 id="location_name"></h2>
+                <div id="items_container">
+                <img id="icon" src="">
+                    <p id="temp"></p>
+                    <p id="wind"></p>
+                    <p id="humidity"></p>
+                </div>
                 </div>
 
                 <button id="edit">Edit</button>
@@ -61,6 +68,9 @@ function renderEventInfoModal() {
         </section>
     `;
 }
+// ----------------------------------> REMOVE THIS ONCE IT WORKS JAMES <----------------------------------
+renderEventInfoModal()
+// ----------------------------------> REMOVE THIS ONCE IT WORKS JAMES <---------------------------------
 
 function removeEventInfoModal() {
     var element = document.getElementById('overlay_2');
