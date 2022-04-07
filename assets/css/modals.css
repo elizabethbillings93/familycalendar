@@ -124,3 +124,8 @@
 #edit {
     margin: 0 24.4em 0 0;
 }
+@media all and (max-width: 581px) {
+    #modal_container input {
+        width: 300px;
+    }
+}

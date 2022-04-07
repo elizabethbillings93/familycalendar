@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="author" content="Elizabeth Billings, James Edwards, Joseph Pugmire, Michael Tingen">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="../css/style.css"/>
-    
-    <title>Family Calendar</title>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="author" content="Elizabeth Billings, James Edwards, Joseph Pugmire, Michael Tingen">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/modals.css" />
+
+  <title>Family Calendar</title>
 </head>
+
 <body>
 
     <!-- Header -->
@@ -21,6 +24,7 @@
         </div>
       </div>
     <div class="familyoption">
+
         <button id="option1"></button>
         <p id="name1">Johnson</p>
         <button id="option2"></button>
@@ -29,232 +33,253 @@
     <!-- added button -->
     <div class="eventbtn">
       <button class="neweventbtn"onclick="renderAddEventModal()">Add New Event</button>
-    </div>
 
-    <!-- Calendar (Days of the Week)-->
-   <div class="dayname">
-    <div class="container">
-    <div class="row">
-        <div class="col-sm">
-            <p>Sun</p>
-        </div>
-        <div class="col-sm">
-            <p>Mon</p>
-        </div>
-        <div class="col-sm">
-            <p>Tue</p>
-        </div>
-        <div class="col-sm">
-            <p>Wed</p>
-        </div>
-        <div class="col-sm">
-            <p>Thu</p>
-        </div>
-        <div class="col-sm">
-            <p>Fri</p>
-        </div>
-        <div class="col-sm">
-            <p>Sat</p>
-        </div>
-    </div>
     </div>
   </div>
-    <!-- Calendar (Days of the Month) -->
-    <section class="container my-5" id="table" >
 
-        <!-- Row 1 -->
+  <!-- Calendar (Days of the Week)-->
+  <section class="container my-5" id="table" >
 
-        <!-- Creates a row -->
-        <div class="row border-top">
-          <!-- Creates a right & left border line -->
-          <div class="col-sm border-right border-left">
-            <p></p>
-            <div class="col-xs-2" id="day-1-event-pane">
-            </div>
-          </div>
-          <div class="col-sm border-right">
-            <p></p>
-            <div class="col-xs-2" id="day-2-event-pane">
-            </div>
-          </div>
-          <div class="col-sm border-right">
-            <p>1</p>
-            <div class="col-xs-2" id="day-3-event-pane">
-            </div>
-          </div>
-          <div class="col-sm border-right">
-            <p>2</p>
-            <div class="col-xs-2" id="day-4-event-pane">
-            </div>
-            <br>
-          </div>
-          <div class="col-sm border-right">
-            <p>3</p>
-            <div class="col-xs-2" id="day-5-event-pane">
-            </div>
-            <br>
-          </div>
-          <div class="col-sm border-right">
-            <p>4</p>
-            <div class="col-xs-2" id="day-6-event-pane">
-                <!--Calendar event test-->
-                <div class="calendar-event">best length is probably 2 lines</div>
-            </div>
-            <br>
-          </div>
-          <div class="col-sm border-right">
-            <p>5</p>
-            <!-- Input Form -->
-            <div class="col-xs-2" id="day-7-event-pane">
-            </div>
-            <br>
-          </div>
+    <!-- Row 1 -->
+
+    <!-- Creates a row -->
+    <div class="row border-top">
+      <!-- Creates a right & left border line -->
+      <div class="col-sm border-right border-left">
+        <p></p>
+        <div class="col-xs-2" id="day-1-event-pane">
         </div>
+      </div>
+      <div class="col-sm border-right">
+        <p></p>
+        <div class="col-xs-2" id="day-2-event-pane">
+        </div>
+      </div>
+      <div class="col-sm border-right">
+        <p>1</p>
+        <div class="col-xs-2" id="day-3-event-pane">
+        </div>
+      </div>
+      <div class="col-sm border-right">
+        <p>2</p>
+        <div class="col-xs-2" id="day-4-event-pane">
+        </div>
+        <br>
+      </div>
+      <div class="col-sm border-right">
+        <p>3</p>
+        <div class="col-xs-2" id="day-5-event-pane">
+        </div>
+        <br>
+      </div>
+      <div class="col-sm border-right">
+        <p>4</p>
+        <div class="col-xs-2" id="day-6-event-pane">
+        </div>
+        <br>
+      </div>
+      <div class="col-sm border-right">
+        <p>5</p>
+        <!-- Input Form -->
+        <div class="col-xs-2" id="day-7-event-pane">
+        </div>
+        <br>
+      </div>
+    </div>
 
-        <!-- Row 2 -->
+    <!-- Row 2 -->
 
-        <!-- Creates a row -->
-        <!-- Creates a top border line -->
-        <div class="row border-top" >
-            <!-- Creates a right & left border line -->
-            <div class="col-sm border-right border-left">
-                <p>6</p>
-                <!-- Input Form -->
-                <div class="col-xs-2" id="day-8-event-pane">
-                </div>
-              <br>
+    <!-- Creates a row -->
+    <!-- Creates a top border line -->
+    <div class="row border-top" >
+        <!-- Creates a right & left border line -->
+        <div class="col-sm border-right border-left">
+            <p>6</p>
+            <!-- Input Form -->
+            <div class="col-xs-2" id="day-8-event-pane">
             </div>
-            <div class="col-sm border-right">
-                <p>7</p>
-                <!-- Input Form -->
-                <div class="col-xs-2" id="day-9-event-pane">
-                </div>
-              <br>
+          <br>
+        </div>
+        <div class="col-sm border-right">
+            <p>7</p>
+            <!-- Input Form -->
+            <div class="col-xs-2" id="day-9-event-pane">
             </div>
-            <div class="col-sm border-right">
-                <p>8</p>
-                <!-- Input Form -->
-                <div class="col-xs-2" id="day-10-event-pane">
-                </div>
-              <br>
+          <br>
+        </div>
+        <div class="col-sm border-right">
+            <p>8</p>
+            <!-- Input Form -->
+            <div class="col-xs-2" id="day-10-event-pane">
             </div>
-            <div class="col-sm border-right">
-                <p>9</p>
-                <!-- Input Form -->
-                <div class="col-xs-2" id="day-11-event-pane">
-                </div>
-              <br>
+          <br>
+        </div>
+        <div class="col-sm border-right">
+            <p>9</p>
+            <!-- Input Form -->
+            <div class="col-xs-2" id="day-11-event-pane">
             </div>
-            <div class="col-sm border-right">
-                <p>10</p>
-                <!-- Input Form -->
-                <div class="col-xs-2" id="day-12-event-pane">
-                </div>
-              <br>
+          <br>
+        </div>
+        <div class="col-sm border-right">
+            <p>10</p>
+            <!-- Input Form -->
+            <div class="col-xs-2" id="day-12-event-pane">
             </div>
-            <div class="col-sm border-right">
-                <p>11</p>
-                <!-- Input Form -->
-                <div class="col-xs-2" id="day-13-event-pane">
-                </div>
-              <br>
+          <br>
+        </div>
+        <div class="col-sm border-right">
+            <p>11</p>
+            <!-- Input Form -->
+            <div class="col-xs-2" id="day-13-event-pane">
             </div>
-            <div class="col-sm border-right">
-                <p>12</p>
-                <!-- Input Form -->
-                <div class="col-xs-2" id="day-14-event-pane">
-                </div>
-              <br>
+          <br>
+        </div>
+        <div class="col-sm border-right">
+            <p>12</p>
+            <!-- Input Form -->
+            <div class="col-xs-2" id="day-14-event-pane">
             </div>
-          </div>
+          <br>
+        </div>
+      </div>
 
-          <!-- Row 3 -->
+      <!-- Row 3 -->
 
-          <!-- Creates a row -->
-          <!-- Creates a top border line -->
-          <div class="row border-top" >
-            <!-- Creates a right & left border line -->
-            <div class="col-sm border-right border-left">
-                <p>13</p>
-                <div class="col-xs-2" id="day-15-event-pane">
-            </div>
-            </div>
-            <div class="col-sm border-right">
-                <p>14</p>
-                <div class="col-xs-2" id="day-16-event-pane">
-            </div>
-            </div>
-            <div class="col-sm border-right">
-                <p>15</p>
-                <div class="col-xs-2" id="day-17-event-pane">
-            </div>
-            </div>
-            <div class="col-sm border-right">
-                <p>16</p>
-                <div class="col-xs-2" id="day-18-event-pane">
-            </div>
-            </div>
-            <div class="col-sm border-right">
-                <p>17</p>
-                <div class="col-xs-2" id="day-19-event-pane">
-            </div>
-            </div>
-            <div class="col-sm border-right">
-                <p>18</p>
-                <div class="col-xs-2" id="day-20-event-pane">
-            </div>
-            </div>
-            <div class="col-sm border-right">
-                <p>19</p>
-                <div class="col-xs-2" id="day-21-event-pane">
-            </div>
-            </div>
-          </div>
+      <!-- Creates a row -->
+      <!-- Creates a top border line -->
+      <div class="row border-top" >
+        <!-- Creates a right & left border line -->
+        <div class="col-sm border-right border-left">
+            <p>13</p>
+            <div class="col-xs-2" id="day-15-event-pane">
+        </div>
+        </div>
+        <div class="col-sm border-right">
+            <p>14</p>
+            <div class="col-xs-2" id="day-16-event-pane">
+        </div>
+        </div>
+        <div class="col-sm border-right">
+            <p>15</p>
+            <div class="col-xs-2" id="day-17-event-pane">
+        </div>
+        </div>
+        <div class="col-sm border-right">
+            <p>16</p>
+            <div class="col-xs-2" id="day-18-event-pane">
+        </div>
+        </div>
+        <div class="col-sm border-right">
+            <p>17</p>
+            <div class="col-xs-2" id="day-19-event-pane">
+        </div>
+        </div>
+        <div class="col-sm border-right">
+            <p>18</p>
+            <div class="col-xs-2" id="day-20-event-pane">
+        </div>
+        </div>
+        <div class="col-sm border-right">
+            <p>19</p>
+            <div class="col-xs-2" id="day-21-event-pane">
+        </div>
+        </div>
+      </div>
 
-          <!-- Row 4 -->
+      <!-- Row 4 -->
 
-          <!-- Creates a row -->
-          <!-- Creates a top border line -->
-          <div class="row border-top">
-            <!-- Creates a right & left border line -->
-            <div class="col-sm border-right border-left">
-                <p>20</p>
-                <div class="col-xs-2" id="day-22-event-pane">
-            </div>
-            </div>
-            <div class="col-sm border-right">
-                <p>21</p>
-                <div class="col-xs-2" id="day-23-event-pane">
-            </div>
-            </div>
-            <div class="col-sm border-right">
-                <p>22</p>
-                <div class="col-xs-2" id="day-24-event-pane">
-            </div>
-            </div>
-            <div class="col-sm border-right">
-                <p>23</p>
-                <div class="col-xs-2" id="day-25-event-pane">
-            </div>
-            </div>
-            <div class="col-sm border-right">
-                <p>24</p>
-                <div class="col-xs-2" id="day-26-event-pane">
-            </div>
-            </div>
-            <div class="col-sm border-right">
-                <p>25</p>
-                <div class="col-xs-2" id="day-27-event-pane">
-            </div>
-            </div>
-            <div class="col-sm border-right">
-                <p>26</p>
-                <div class="col-xs-2" id="day-28-event-pane">
-            </div>
-            </div>
-          </div>
+      <!-- Creates a row -->
+      <!-- Creates a top border line -->
+      <div class="row border-top">
+        <!-- Creates a right & left border line -->
+        <div class="col-sm border-right border-left">
+            <p>20</p>
+            <div class="col-xs-2" id="day-22-event-pane">
+        </div>
+        </div>
+        <div class="col-sm border-right">
+            <p>21</p>
+            <div class="col-xs-2" id="day-23-event-pane">
+        </div>
+        </div>
+        <div class="col-sm border-right">
+            <p>22</p>
+            <div class="col-xs-2" id="day-24-event-pane">
+        </div>
+        </div>
+        <div class="col-sm border-right">
+            <p>23</p>
+            <div class="col-xs-2" id="day-25-event-pane">
+        </div>
+        </div>
+        <div class="col-sm border-right">
+            <p>24</p>
+            <div class="col-xs-2" id="day-26-event-pane">
+        </div>
+        </div>
+        <div class="col-sm border-right">
+            <p>25</p>
+            <div class="col-xs-2" id="day-27-event-pane">
+        </div>
+        </div>
+        <div class="col-sm border-right">
+            <p>26</p>
+            <div class="col-xs-2" id="day-28-event-pane">
+        </div>
+        </div>
+      </div>
 
-          <!-- Row 5 -->
+      <!-- Row 5 -->
+
+      <!-- Creates a row -->
+      <!-- Creates a top & bottom border line -->
+      <div class="row border-top border-bottom">
+        <!-- Creates a right & left border line -->
+        <div class="col-sm border-right border-left">
+            <p>27</p>
+            <div class="col-xs-2" id="day-29-event-pane">
+        </div>
+        </div>
+        <div class="col-sm border-right">
+            <p>28</p>
+            <div class="col-xs-2" id="day-30-event-pane">
+        </div>
+        </div>
+        <div class="col-sm border-right">
+            <p>29</p>
+            <div class="col-xs-2" id="day-31-event-pane">
+        </div>
+        </div>
+        <div class="col-sm border-right">
+            <p>30</p>
+            <div class="col-xs-2" id="day-32-event-pane">
+        </div>
+        </div>
+        <div class="col-sm border-right">
+            <p>31</p>
+            <div class="col-xs-2" id="day-33-event-pane">
+        </div>
+        </div>
+        <div class="col-sm border-right">
+            <p></p>
+            <div class="col-xs-2" id="day-34-event-pane">
+        </div>
+        </div>
+        <div class="col-sm border-right">
+            <p></p>
+            <div class="col-xs-2" id="day-35-event-pane">
+        </div>
+        </div>
+      </div>
+  </section>
+  <div class="nextbtn">
+    <a href="javascript:history.back()"><button class="nextmonth">Next Month</button></a>
+  </div>
+  </section>
+  <div id="addEventModalContainer"></div>
+  <div id="eventInfoModalContainer"></div>
+
 
           <!-- Creates a row -->
           <!-- Creates a top & bottom border line -->
@@ -305,5 +330,7 @@
     <script src="/assets/js/modals.js"></script>
     
   </body>
+
 </body>
+
 </html>
