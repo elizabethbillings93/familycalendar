@@ -19,7 +19,7 @@ function renderAddEventModal() {
                     <input id="event_location" class="modal-input" type="text" placeholder="Location">
                         <br>
 
-                    <button id="create" class="">Create</button>
+                    <button id="create" class="create-btn">Create</button>
                     <button id="cancel" onclick="removeAddEventModal()">Cancel</button>
                 </div>
             </container>
