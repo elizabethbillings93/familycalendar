@@ -1,6 +1,6 @@
 // Open Meteo Weather API 
 
-function fetchCurrentWeather() {
+function fetchCurrentWeather(lat, lng, city) {
     // API KEY -----------------------------------------
     var weatherKey = "d46126e5fbc01d3792d9294cde11141b";
     // API KEY -----------------------------------------
@@ -11,9 +11,8 @@ function fetchCurrentWeather() {
   location.innerHTML = searchLocation.value;
   console.log(location)
   console.log(searchLocation);
-  var currentWeatherURL = "https://api.openweathermap.org/data/2.5/weather?q=" + searchLocation.value + "&units=imperial&appid=" + weatherKey;
-
-  fetch(currentWeatherURL)
+  var oneCallURL = "https://api.openweathermap.org/data/2.5/onecall?lat=" + lat + "&lon=" + lng + "&exclude={part}&appid=" + weatherKey;
+  fetch(oneCallURL)
     .then(function (response) {
         return response.json();
     })
@@ -24,57 +23,26 @@ function fetchCurrentWeather() {
 
         // ^^ WORKS ONLY IF YOU TYPE IN A CITY ^^
 
-        var cityName = data.name;
+        var cityName = city;
         //  Icon
-        var icon = data.weather[0].icon;
+        var icon = data.current.weather[0].icon;
         document.querySelector('#icon').src = "https://openweathermap.org/img/wn/" + icon + "@2x.png";
         // Temperature
-        var temperature = data.main.temp;
+        var temperature = Math.trunc(((data.current.temp)-273.15)*1.8 + 32);
         // Wind
-        var wind = data.wind.speed;
+        var wind = data.current.wind_speed;
         // Humidity
-        var humidity = data.main.humidity;
-        // var uvIndex = data
-        console.log("City name: " + cityName);
-        console.log("Icon: " + icon);
-        console.log("Temperature: " + temperature);
-        console.log("Wind: " + wind);
-        console.log("Humudity: " + humidity);
-        // console.log("UX: " + UV);          
+        var humidity = data.current.humidity;
 
-        // ^^ WORKS ^^
-
-        // Latitude
-        var lat = data.coord.lat;
-        // Longitude
-        var lon = data.coord.lon;
-        console.log("Latitude: " + lat);
-        console.log("Longitude: " + lon);
         var tempEl = document.getElementById("temp");
         var windEl = document.getElementById("wind");
         var humidityEl = document.getElementById("humidity");
-        var uvEl = document.getElementById("uv_index");
         var current = moment().format("L");
         console.log(current)
 
-        var oneCallURL = "https://api.openweathermap.org/data/2.5/onecall?lat=" + lat + "&lon=" + lon + "&exclude={part}&appid=" + weatherKey;
-            // Fetching the variable above, containing the URL we need
-            fetch(oneCallURL)
-            .then(function (response) {
-                return response.json();
-            })
-            .then(function (data) {
-                console.log(data);
-
-            // ^^ WORKS ^^
-
-                tempEl.textContent = "Temp: " + temperature + " \u2109";
-                windEl.textContent = "Wind: " + wind + " MPH";
-                humidityEl.textContent = "Humidity: " + humidity + " %";
-                location.textContent = cityName + " (" + current + ")";
-
-        })
+        tempEl.textContent = "Temp: " + temperature + " \u2109";
+        windEl.textContent = "Wind: " + wind + " MPH";
+        humidityEl.textContent = "Humidity: " + humidity + " %";
+        location.textContent = cityName + " (" + current + ")";
     })
 }
-
-$('#create').on('click', fetchCurrentWeather);

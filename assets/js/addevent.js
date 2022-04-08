@@ -85,6 +85,16 @@ function getAllSessionEvents() {
     return events;
 }
 
+function getSessionEventById(targetId) {
+    var event = {};
+    for (var key in sessionStorage) {
+        if(key.indexOf('day') === 0 && key.includes(targetId)){
+            event = JSON.parse(sessionStorage.getItem(key));
+        }
+    }
+    return event;
+}
+
 function renderEventsFromSessionStorage(){
     var events = getAllSessionEvents();
     var eventCount = 0;

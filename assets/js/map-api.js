@@ -1,25 +1,29 @@
 //Google Maps API 
 
 // API KEY ----------------------------------------------------------------------------------
-var mapKey = "AIzaSyDdFTb2jqRnuN_iRaXeMo8jIeThNW5ddxUAIzaSyDdFTb2jqRnuN_iRaXeMo8jIeThNW5ddxU"
+var mapKey = "AIzaSyDdFTb2jqRnuN_iRaXeMo8jIeThNW5ddxU"
 // API KEY ----------------------------------------------------------------------------------
 var mapContainer = document.getElementById('maps_container'); 
 console.log(mapContainer)
 
-function getLatLon() {
+function getLatLon(eventAddress) {
   geocoder = new google.maps.Geocoder();
-  request: {
-    address: "Atlanta"
-  };
-  
-  geocoder.geocode( {address:"address"}, function(results, status) {
+  geocoder.geocode( {address:eventAddress}, function(results, status) {
     if (status === "OK") {
+      //get city out of response
+      var city = '';
+      for(var i = 0; i < results[0].address_components.length; i++){
+        if(results[0].address_components[i].types[0] == 'locality')
+          city = results[0].address_components[i].long_name;
+      }
       // Display response in the console
-      console.log(results);
-  } else {
+      //gotta fire weather and map from here because async
+      updateMap(results[0].geometry.location.lat(), results[0].geometry.location.lng());
+      fetchCurrentWeather(results[0].geometry.location.lat(), results[0].geometry.location.lng(), city);
+    }
+    else {
       alert("Geocode error: " + status);
-
-  }
+    }
 });
 }
 
@@ -33,6 +37,24 @@ function initMap() {
   console.log("Map Object")
   console.log("----------") 
   console.log(map)
+}
+
+function updateMap(lat, lon) {
+  var latlon = {
+    lat: lat,
+    lng: lon
+  };
+  if (typeof map != 'undefined'){
+    map.setCenter(latlon);
+    map.setZoom(15);
+    new google.maps.Marker({
+      position: latlon,
+      map,
+      title: 'Location'
+    })
+  }
+  else
+    map = new google.maps.Map
 }
 
 
