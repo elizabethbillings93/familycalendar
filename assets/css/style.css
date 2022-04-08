@@ -54,12 +54,11 @@ body {
     border: solid white;
     width: 50px;
     height: 50px;
-    border-radius: 10px;
-    
-   
-    
+    border-radius: 10px;    
 }
-
+#option1:hover {
+    background: #168a65;
+}
 #option2 {
     margin-left: 35%;
     background-color: #278AB0;
@@ -68,7 +67,9 @@ body {
     width: 50px;
     height: 50px;
 }
-
+#option2:hover {
+    background: #1e6f8e;
+}
 .neweventbtn {
     margin-left: 30px;
     margin-bottom: 30px;
