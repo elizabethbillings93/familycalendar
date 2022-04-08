@@ -1,8 +1,6 @@
 /* Modal Container */
 
 #overlay {
-    /* "none" is removed from display when Cancel is clicked */
-    display: none;
     background-color: rgba(0, 0, 0, 0.5);
     top: 0;
     bottom: 0;
@@ -59,8 +57,6 @@
 #modal_container button {
     border: 1px solid #000;
     border-radius: .5em;
-   
-
 }    
 
 #modal_container button:hover {
@@ -69,7 +65,6 @@
 }
 
 #create {
-    margin: 0 22.8em 0 0;
     background-color: #1C4670;
     color:white;
     height: 30px;
@@ -77,12 +72,11 @@
 }
 #cancel{
     background-color: white;
+    float: right;
 }
 /* Event INFO Modal Parent Container */
 
 #overlay_2 {
-    /* "none" is removed from display when Cancel is clicked */
-    /* display: none; */
     background-color: rgba(0, 0, 0, 0.5);
     top: 0;
     bottom: 0;
@@ -123,7 +117,7 @@
 }
 
 #weather_container {
-    background-color:rgba(0, 0, 0, 0.5);
+    background-color:rgba(0, 0, 0, 0.15);
     border: 2px solid #000;
     height: 300px;
     margin: 0 0 10px 0;
@@ -155,11 +149,20 @@
     color: #fff;
 }
 
-#edit {
-    margin: 0 24.4em 0 0;
+#cancel-2 {
+    float: right;
 }
 
+#delete-event {
+    float: right;
+    margin-right: 5px;
+}
+
+#add-event-title {
+    margin-bottom: 0px;
+    padding-bottom: 2rem!important;
 /* Google Maps API */
+}
 
 #map {
     height: 100%;
